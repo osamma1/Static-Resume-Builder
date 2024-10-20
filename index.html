@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Resume Builder</h1>
+    <div class="form-container">
+      <form id="resume-form">
+        <h2>Enter Your Details</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Your full name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Your phone number">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Your address">
+
+        <label for="education">Education:</label>
+        <textarea id="education" rows="3" placeholder="Your education details"></textarea>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" rows="3" placeholder="Your work experience"></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" rows="3" placeholder="Your skills"></textarea>
+      </form>
+    </div>
+
+    <div class="preview-container">
+      <h2>Resume Preview</h2>
+      <div id="resume-preview">
+        <p><strong>Name:</strong> <span id="preview-name"></span></p>
+        <p><strong>Email:</strong> <span id="preview-email"></span></p>
+        <p><strong>Phone:</strong> <span id="preview-phone"></span></p>
+        <p><strong>Address:</strong> <span id="preview-address"></span></p>
+        <p><strong>Education:</strong> <span id="preview-education"></span></p>
+        <p><strong>Work Experience:</strong> <span id="preview-experience"></span></p>
+        <p><strong>Skills:</strong> <span id="preview-skills"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
